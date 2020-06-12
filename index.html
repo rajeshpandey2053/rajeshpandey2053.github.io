@@ -1,15 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>MY Portfolio</title>
-    <style>
-        .main{
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
+<section>
 <div id="loading">
     loading...
 
@@ -26,34 +24,25 @@
     <p>
         Check me on <a id="githubLink">Github</a>
     </p>
+
 </div>
 
-<script>
-    fetch("https://api.github.com/users/rajeshpandey2053")
-        .then(response => response.json())
-        .then(function (data) {
-            console.log(data)
+<div class="submain">
+    <h1>Repository list</h1>
+    <ul>
+        <li id="firstRepo">1</li>
+        <li id="secondRepo">1</li>
+        <li id="thirdRepo">1</li>
+        <li id="fourthRepo">1</li>
 
-            let followersCount = data['followers']
-            let followersInfo=`I have been followed by ${followersCount} awesome people on GitHub`
-            document.getElementById('profileImage').src = data['avatar_url']
-            document.getElementById('fullName').textContent = data['name']
-            document.getElementById('bio').textContent = data['bio']
-            document.getElementById('followersInformation').textContent = followersInfo
+    </ul>
+</div>
 
-            document.getElementById('githubLink').href = data['html_url']
-
-            document.getElementById('maincontainer').hidden = false
-
-            document.getElementById('loading').hidden = true
-
-
-        })
+<script src="script.js">
 
 </script>
 
-
-
+</section>
 </body>
 
 </html>

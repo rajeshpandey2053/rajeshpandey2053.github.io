@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+section{
+    padding: 0 100px;
+    background: url("https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/images/cc_cloud_16x9.jpg?itok=H20aodkm&c=d5c762b61c41d41483f1c3d7e4a23004");
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+.main{
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    float: left;
+}
+.main h2{
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #044463;
+
+}
+.submain{
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    float: right;
+}
+.submain h1{
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #044463;
+
+}
