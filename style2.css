@@ -9,11 +9,10 @@ section{
     height: 100vh;
     display: flex;
     align-items: center;
+    width = 100%;
 
 }
-.image{
-        width: 100%
-}
+
 
 .main{
     position: relative;
